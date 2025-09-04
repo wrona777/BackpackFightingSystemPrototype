@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsvdygxfsvdsf"]
+
+[ext_resource type="Texture2D" uid="uid://bf3xji4xpekju" path="res://assets/slotPlaceholder.png" id="1_4v6ba"]
+[ext_resource type="Script" uid="uid://cl3y4qlrckc33" path="res://scripts/slot.gd" id="2_ic0fu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qw0r6"]
+atlas = ExtResource("1_4v6ba")
+region = Rect2(643, 267.5, 310, 311)
+
+[node name="Slot" type="TextureRect"]
+custom_minimum_size = Vector2(50, 50)
+texture = SubResource("AtlasTexture_qw0r6")
+expand_mode = 1
+script = ExtResource("2_ic0fu")
+
+[node name="slotModulation" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.584314, 0.6, 0.266667, 0)
