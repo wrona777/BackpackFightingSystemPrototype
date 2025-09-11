@@ -49,3 +49,5 @@ layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
 columns = 8
+
+[connection signal="pressed" from="background/MarginContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]

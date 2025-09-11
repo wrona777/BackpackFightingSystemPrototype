@@ -2,21 +2,29 @@
   "1": {
 	"Name": "item3placeholder",
 	"Value": 10,
-	"Grid": "0,0/0,1/-1,0"
+	"Grid": "0,0/0,1/-1,0",
+	"Sizex": 100,
+	"Sizey": 100
   },
   "2": {
 	"Name": "item2placeholder",
 	"Value": 20,
-	"Grid": "0,0/0,1"
+	"Grid": "0,0/0,1",
+	"Sizex": 100,
+	"Sizey": 50
   },
   "3": {
 	"Name": "item4placeholder",
 	"Value": 30,
-	"Grid": "0,0/1,0/0,1/1,1"
+	"Grid": "0,0/1,0/0,1/1,1",
+	"Sizex": 100,
+	"Sizey": 100
   },
   "4": {
 	"Name": "item1placeholder",
 	"Value": 40,
-	"Grid": "0,0"
+	"Grid": "0,0",
+	"Sizex": 50,
+	"Sizey": 50
   }
 }
