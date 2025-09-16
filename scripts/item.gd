@@ -33,10 +33,11 @@ func rotate_item():
 func _snap_to(destination: Vector2):
 	var tween = get_tree().create_tween()
 	if int(rotation_degrees) % 180 == 0:
-		destination += IconNode.size / 5
+		destination += IconNode.size / 2
 	else:
 		var temp_xy_switch = Vector2(IconNode.size.y, IconNode.size.x)
-		destination += temp_xy_switch / 5
-	
+		destination += temp_xy_switch / 2
+	print(destination, " destynacja")
+	print("IconNode.size:", IconNode.size)
 	tween.tween_property(self, "global_position", destination, 0.15).set_trans(Tween.TRANS_SINE)
 	selected = false

@@ -9,7 +9,7 @@
   "2": {
 	"Name": "item2placeholder",
 	"Value": 20,
-	"Grid": "0,0/0,1",
+	"Grid": "0,0/1,0",
 	"Sizex": 100,
 	"Sizey": 50
   },

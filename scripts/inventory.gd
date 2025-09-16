@@ -43,7 +43,7 @@ func _on_slot_mouse_entered(a_slot):
 		check_slot_availability(current_slot)
 		set_grids.call_deferred(current_slot)
 
-func _on_slot_mouse_exited(a_slot):
+func _on_slot_mouse_exited(_a_slot):
 	clear_grid()
 
 func _on_button_pressed() -> void:
@@ -101,7 +101,10 @@ func place_item() -> void:
 		return
 		
 	var calculated_grid_id = current_slot.slot_ID + icon_anchor.x * col_count + icon_anchor.y
+	print(calculated_grid_id, " kalkulated id")
+	print(icon_anchor.x)
 	item_held._snap_to(grid_array[calculated_grid_id].global_position)
+	print("Slot size:", grid_array[calculated_grid_id].size)
 	
 	item_held.grid_anchor = current_slot
 	for grid in item_held.item_grids:
